@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav" id="nav-ul">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/company/home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/company/support.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Product
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Our Product</a></li>
+                                <li><a class="dropdown-item" href="#">Other Product</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    {% block content %} {% endblock content %}
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 p-5">
+                    <p>At Rechimar Chemical Ind Ltd, our success is based on that of our customers and we always put our
+                        customer first. We
+                        are so confident in our products and our service that we adhere to the principle of all profit
+                        to
+                        our customer & all loss to us and would rather lose our profit than lose a customer. We support
+                        the
+                        growth of all our customers, no matter how big or small and work together for a brighter future
+                        for
+                        all.</p>
+                </div>
+                <hr style="color: #fff;">
+                <div class="col-md-4 p-5">
+                    <h3>NAVIGATION</h3>
+                    <ul style="list-style: none; line-height: 30px;">
+                        <li><a href="" style="text-decoration: none; color: #fff;">Home</a></li>
+                        <li><a href="" style="text-decoration: none; color: #fff;">About</a></li>
+                        <li><a href="" style="text-decoration: none; color: #fff;">Contact</a></li>
+                        <li><a href="" style="text-decoration: none; color: #fff;">Product</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 p-5">
+                    <h3>OUR COMPANY</h3>
+                    <p>+234 803 539 6844 <br> +234 803 971 2463</p>
+                    <p></p>
+                    <p>Dei-Dei Building Material market, Abuja, Nigria.</p>
+                </div>
+            </div>
+        </div>
+        <div style="background-color:#a517ba;" class="text-center p-2">
+            <p> &copy; RCIgroup.com 2021-2022. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

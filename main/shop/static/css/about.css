@@ -1,0 +1,38 @@
+#fix {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+
+#fix::after {
+    content: '';
+
+}
+
+#bg-light {
+    background-color: black;
+}
+
+.btn {
+    border: 1px solid #5f1782;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, red, #5f1782);
+    color: white;
+}
+
+#float {
+    color: blueviolet;
+}
+
+#fix1 {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+

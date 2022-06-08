@@ -1,0 +1,216 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content=" we produce and supply any kind of building material use for building such as stamp concrete, tile gum,screeding paint and colour cement e.t.c and any chemical product">
+    <meta name="author" content="Okorie Reginald .c. Marcel">
+    <meta name="keyword"
+        content="Building material, Dei-Dei building material market, Chemical Material, stamp concrete material">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <title>RCIgroup.com</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --white: #fff;
+            --red: red;
+        }
+
+        #nav-logo {
+            font-size: 2rrem;
+            color: var(--red);
+
+        }
+
+        #nav-links {
+            margin-left: 800px
+        }
+
+        .nav-menu ul li {
+            position: relative;
+            padding: 10px 0 10px 22px;
+            list-style: none;
+
+        }
+
+        .nav-menu #nav-links a {
+            position: relative;
+            color: var(--white);
+            transition: 0.3s;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 0.4px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .nav-menu #nav-links li a::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            bottom: -6px;
+            left: 0;
+            background-color: #71e215;
+            visibility: hidden;
+            width: 0px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-menu #nav-links a:hover::before,
+        .nav-menu #nav-links li:hover a::before,
+        .nav-menu #nav-links .active a::before {
+            visibility: visible;
+            width: 100%;
+        }
+
+        .nav-menu #nav-links a:hover,
+        .nav-menu #nav-links .active a,
+        .nav-menu #nav-links li:hover a {
+            color: orange;
+        }
+
+        @media (max-width:768px) {
+            #nav-links {
+                margin-left: 0px;
+            }
+
+            .nav-menu #nav-links li a {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="nav-bar" class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'shop:home'%}" id="nav-logo"> <b>RCIGROUP</b> </a>
+                <button class="navbar-toggler button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  " id="navbarNavDropdown">
+                    <ul class="navbar-nav" id="nav-links">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'shop:home'%}"><i
+                                    class="fa-solid fa-house-user mx-1"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'shop:about'%}"><i
+                                    class="fa-solid fa-address-card mx-1"></i>About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'shop:contact'%}"><i
+                                    class="fa-solid fa-headset mx-1"></i>Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i
+                                    class="fa-brands fa-product-hunt mx-1"></i>
+                                Product
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a style="color: #000;" class="dropdown-item" href="{% url 'shop:product'%}">Our
+                                        Product</a></li>
+                                <li><a style="color: #000;" class="dropdown-item" href="{% url 'shop:product1'%}">Other
+                                        Product</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    {% block content %} {% endblock content %}
+    <footer>
+        <div class="container-fluid pt-5" id="footer">
+            <div class=" row">
+                <div class="col-md-4 my-2 ">
+                    <div>
+                        <h2 style="color: red; font-size: 1.5rem;">+ FOLLOW US</h2>
+                        <span>
+                            <a href="https://wa.me/message/4WTTDSEWKCVUN1"><img
+                                    src="{% static 'image/whatsapp-icon.png'%}" alt="" width="70px"></a>
+                            <a href="https://www.instagram.com/regchimar/"><img
+                                    src="{% static 'image/instagram-icon.png'%}" alt="" width="70px"></a>
+                            <a href="https://m.facebook.com/Regchimar-Chemical-Ind-Ltd-103138678978592/?ref=bookmarks"><img
+                                    src=" {% static 'image/facebook-icon.png'%}" alt="" width="70px"></a>
+                        </span>
+                    </div>
+
+                    <p>At Rechimar Chemical Ind Ltd, our success is based on that of our customers and we always
+                        put our
+                        customer first. We
+                        are so confident in our products and our service that we adhere to the principle of all
+                        profit
+                        to
+                        our customer & all loss to us and would rather lose our profit than lose a customer. We
+                        support
+                        the
+                        growth of all our customers, no matter how big or small and work together for a brighter
+                        future
+                        for
+                        all.</p>
+                </div>
+                <div class="col-md-4 my-2 ">
+                    <h3 style="color: red;">NAVIGATION</h3>
+                    <ul style="list-style: none; line-height: 30px;">
+                        <li><a href="{% url 'shop:home'%}" style="text-decoration: none; color: #fff;"><i
+                                    class="fa-solid fa-house-user mx-1"></i>Home</a>
+                        </li>
+                        <li><a href="{% url 'shop:about'%}" style="text-decoration: none; color: #fff;"><i
+                                    class="fa-solid fa-address-card mx-1"></i>About</a></li>
+                        <li><a href="{% url 'shop:contact'%}" style="text-decoration: none; color: #fff;"><i
+                                    class="fa-solid fa-headset mx-1"></i>Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"
+                                style=" color: #fff; text-decoration: none;"><i
+                                    class="fa-brands fa-product-hunt mx-1"></i>
+                                Product
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a style="color: #000;" class="dropdown-item" href="{% url 'shop:product'%}">Our
+                                        Product</a></li>
+                                <li><a style="color: #000;" class="dropdown-item" href="{% url 'shop:product1'%}">Other
+                                        Product</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 my-2">
+                    <h3 style="color: red;">OUR COMPANY</h3>
+                    <p><i class="fa-brands fa-whatsapp mx-1"></i>+234 803 539 6844 <br> <i
+                            class="fa-solid fa-phone mx-1"></i>+234
+                        803 971 2463</p>
+                    <p></p>
+                    <p><i class="fa-solid fa-location-dot mx-1"></i>Dei-Dei Building Material market, Abuja, Nigria.</p>
+                    <p> <i class="fa-solid fa-location-dot mx-1"></i>Shop number:C2 422</p>
+                </div>
+            </div>
+        </div>
+        <div style="background-color:#a517ba;" class="text-center p-2">
+            <p style="font-size: 0.9rem; color: #fff;"> &copy; RCIgroup.com 2021-2022. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

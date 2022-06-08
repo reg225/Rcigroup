@@ -1,0 +1,62 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 my-4">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static 'image/sack.jpg'%}" class="d-block w-80" alt="..." width="300">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'image/leather.jpg'%}" class="d-block w-80" alt="..." width="300">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'image/tilefix.jpg'%}" class="d-block w-80" alt="..." width="300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-center mt-3" style="color: #a517ba; font-size: 1.5rem;">Top Choice(Adhensive)TileGum
+                </h5>
+                <p>for ceramics tiles (glazed & terracotta), vitrified tiles, porcelain tiles, mosaic tiles and natural
+                    stones like granite, sand stone for indoor and outdoor areas Non-slip, perfect for walls Suitable
+                    for wet areas.</p>
+                <h5 class="text-center"
+                    style="border: 1px outset ; background-color: black; color: #a517ba; margin: auto; width: 300px; border-radius: 20px;">
+                    Characteristics</h5>
+                <ul>
+                    <li>For indoor and outdoor area</li>
+                    <li>Non-slip, perfect for walls</li>
+                    <li>Suitable for wet areas</li>
+                    <li>For caramics tiles (glazed & terracotta), vitrified tiles, porcelain tiles, mosaic tiles and
+                        natural stones like granite, sand stone.</li>
+                </ul>
+                <h5 class="text-center"
+                    style="border: 1px outset ; background-color: black; color: #a517ba; margin: auto; width: 300px; border-radius: 20px;">
+                    Areas of Application</h5>
+                <p>Indoor and outdoor areas: Utility rooms as cellars, storerooms, drying rooms, corridors, stairs,
+                    anterooms, living rooms, parking, balconies, terraces, <br> Wet areas: Kitchen, toilets, bathrooms
+                    (with periodic water penetration)</p>
+                <h5 class="text-center"
+                    style="border: 1px outset ; background-color: black; color: #a517ba; margin: auto; width: 300px; border-radius: 20px;">
+                    Storage</h5>
+                <p>store all rolls vertically in a cool, covered dry place. Do not expose the pails to direct sunlight
+                    and keep away from all sources of heat.</p>
+                <h5 class="text-center"
+                    style="border: 1px outset ; background-color: black; color: #a517ba; margin: auto; width: 300px; border-radius: 20px;">
+                    Package</h5>
+                <ul>
+                    <li>20kg(leather and sack Gum)</li>
+                    <li>10kg(paper Gum)</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock content %}

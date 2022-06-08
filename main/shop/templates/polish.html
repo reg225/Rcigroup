@@ -1,0 +1,41 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<section class="bg-light">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-6 my-4">
+                <img src="{% static 'image/polish.jpg'%}" class="img-fluid" alt="" width="400"
+                    style="border-radius: 150px;">
+            </div>
+            <div class="col-md-6">
+                <h5 class="text-center" style="color: #a517ba; font-size: 1.5rem;">Tile Polish</h5>
+                <p>Using RCI Tile Polish is more than just adding shine to your tile floors. That layer of polish adds
+                    protection as well. Polishing floors helps restore a floor's protective finish while filling in any
+                    microscopic scratches. When it comes to maintaining beautiful tile floors, RCI tile polish should be
+                    added as a necessary part of your long-term maintenanace. Polish the floors every 2-4 months or
+                    longer depending on foot traffic.</p>
+                <h5 class="text-center"
+                    style="border: 1px outset ; background-color: black; color: #a517ba; margin: auto; width: 300px; border-radius: 20px;">
+                    Fields of
+                    Application</h5>
+                <ul class="mt-2">
+                    <li>Measure your floor to ensure that you have enough polish </li>
+                    <li>It helps protect your tile floor by restoring its beautiful looks</li>
+                </ul>
+                <h5 class="text-center"
+                    style="border: 1px outset ; background-color: black; color: #a517ba; margin: auto; width: 300px; border-radius: 20px;">
+                    Storage</h5>
+                <p>Store in a dry, cool and shaded area. Protect from sunlight. </p>
+                <h5 class="text-center"
+                    style="border: 1px outset ; background-color: black; color: #a517ba; margin: auto; width: 300px; border-radius: 20px;">
+                    Package</h5>
+                <ul>
+                    <li>20L</li>
+                    <li>4L</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,108 @@
+{% extends 'main.html' %} {% load static %} {% block content %}
+<style>
+    #header {
+        font-size: 1.5rem;
+        text-align: center;
+        border: 2px outset black;
+        margin: auto;
+        width: 250px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 0px 2px red;
+        background-color: black;
+        color: #fff;
+    }
+</style>
+<header style="background-image: url('{% static 'image/slider.jpg'%}'); padding-bottom: 100px; ">
+    <div class="container-fluid">
+        <div style="color: orangered;">
+            <h1 style="font-size: 1.8rem;" class="text-center pt-4">Regchimar Chemical Ind LTD(RCI)</h1>
+        </div>
+
+        <h1 style="color: #fff; font-size: 1.2rem;">We Produce and Supply the Best Quality Product for your Buildings
+        </h1>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <h3 class="text-center mt-4" id="header"> Colour Cement</h3>
+        <div class="row p-4">
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/colour1.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h4 class="text-center p-1" style="color: #a517ba;">Red Colour Cement</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3 " id="img-hover">
+                <img src="{% static 'image/colour2.jpg'%}" class="img-fluid" alt="" width="550">
+                <div>
+                    <h4 class="text-center p-1" style="color: #a517ba;">Black colour cement</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/colour3.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h4 class="text-center p-1" style="color: #a517ba;">Yellow Colour Cement</h4>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/colour4.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h4 class="text-center p-1" style="color: #a517ba;">Green Colour Cement</h4>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <h2 id="header">Pigment Cement</h2>
+        </div>
+        <div class="row p-4" style="display: flex; text-align: center; justify-content: center;">
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/pigred.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h4 class="text-center p-1" style="color: #a517ba;">Red Pigment</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3 " id="img-hover">
+                <img src="{% static 'image/pigblack.jpg'%}" class="img-fluid" alt="" width="550">
+                <div>
+                    <h4 class="text-center p-1" style="color: #a517ba;">Black Pigment</h4>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <h2 id="header">Waterproof Cement</h2>
+        </div>
+        <div class="row p-4">
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/jk.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h4 class="text-center p-1" style="color: #a517ba;">JK Waterproof</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3 " id="img-hover">
+                <img src="{% static 'image/joy1.jpg'%}" class="img-fluid" alt="" width="550">
+                <div>
+                    <h4 class="text-center p-1" style="color: #a517ba;">Joy Waterproof</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3 " id="img-hover">
+                <img src="{% static 'image/docfix.jpg'%}" class="img-fluid" alt="" width="550">
+                <div>
+                    <h4 class="text-center p-1" style="color: #a517ba;">DR. Fixit Waterproof</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3 " id="img-hover">
+                <img src="{% static 'image/son.jpg'%}" class="img-fluid" alt="" width="550">
+                <div>
+                    <h4 class="text-center p-1" style="color: #a517ba;">Soncrete Waterproof</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,292 @@
+{% extends 'main.html' %} {% load static %} {% block content %}
+
+<style>
+    #counter {
+        border: 2px outset #a517ba;
+        border-radius: 20px;
+        margin: auto;
+        width: 300px;
+        text-align: center;
+
+    }
+
+    .counter {
+        font-size: 2rem;
+        font-weight: bold;
+        color: red;
+    }
+
+    #img-hover {
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    #img-hover img {
+        transition: all 1s linear;
+    }
+
+    #img-hover img:hover {
+        transform: scale(1.1);
+
+    }
+</style>
+<link rel="stylesheet" href="{% static 'css/home.css'%}">
+
+<section id="banner" style="background-image: url('{% static 'image/slider.jpg'%}');">
+    <div class="container">
+        <div class=" banner-h text-center pt-3">
+            <h1 style="color: orangered; font-size: 2rem;">Regchimar Chemical Ind LTD(RCI)</h1>
+            <p class="lead">One-Stop for Building Material Supply in Abuja</p>
+        </div>
+
+        <div class="title-b pt-4">
+            <h2 style="font-size: 2.5rem;">Expert in Chemical industry since 2008</h2>
+            <p class="lead">One of the leading Chemical Companies in Abuja, Dei-Dei, NIgerial</p>
+
+
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div id="counter" class="text-center col-md-6 my-4">
+                <div class="counter" data-target="100">100%</div>
+                <h4>Customer satisfaction</h4>
+            </div>
+            <div id="counter" class="text-center col-md-6 my-4">
+                <div class="counter">+2000</div>
+                <h4>Customer served</h4>
+            </div>
+            <div class="p-3">
+                <hr class="pt-1">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="home-2 bg-light">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-6">
+                <img src="{%static 'image/network.png'%}" class="img-fluid" alt="" width="400">
+            </div>
+            <div class="col-md-6" id="card">
+                <h3 class="text-center" style="color: #a517ba;"> <u>ABOUT RCI</u></h3>
+                <p>
+                    Rechimar Chemical Ind Ltd(RCI), was founded in <strong>2008</strong> by Okorie Reginald Chimazie. He
+                    is from Imo
+                    state
+                    Umuozo
+                    Nwagele LGA, Nigerial. RCI is generally acknowledge to be the best manufacturer supplier of any
+                    building material
+                    for any building project. As the company earned its deserved reputation by
+                    hard
+                    work,
+                    achieving high customer statisfaction, top-notch Quality and
+                    schedule targets, the size of the company and scope of work increased dramatically.
+                </p>
+                <p>At Rechimar Chemical Ind Ltd, our success is based on that of our customers and we always put our
+                    customer first. We
+                    are so confident in our products and our service that we adhere to the principle of all profit
+                    to
+                    our customer & all loss to us and would rather lose our profit than lose a customer. We support
+                    the
+                    growth of all our customers, no matter how big or small and work together for a brighter future
+                    for
+                    all. <a href="{% url 'shop:about'%}" style="text-decoration:none;">
+                        Read More
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section style="background-image: url('{% static 'image/back.png'%}');" id="row-3">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img src="{% static 'image/price.png'%}" class="img-fluid" alt="" width="70">
+                </div>
+                <h4 class="text-center">Price</h4>
+                <p class="text-center">our price to all our prodcut is good and affordable </p>
+            </div>
+            <div class="col-md-3">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img src="{% static 'image/service.png'%}" class="img-fluid" alt="" width="70">
+                </div>
+                <h4 class="text-center">Service</h4>
+                <p class="text-center">We provide the best services to our customers</p>
+            </div>
+            <div class="col-md-3">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img src="{% static 'image/quality.png'%} " class="img-fluid" alt="" width="70">
+                </div>
+                <h4 class="text-center">Quality</h4>
+                <p class="text-center">Produced within Nigeria, with the highest quality, our products compete with
+                    market leaders.</p>
+            </div>
+            <div class="col-md-3">
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <img src="{% static 'image/availability.png'%} " class="img-fluid" alt="" width="70">
+                </div>
+                <h4 class="text-center">Availability</h4>
+                <p class="text-center">Availability of goods with regular & reliable supply.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cnntainer p-5" style="background-color: skyblue;">
+    <div>
+        <h3 style="color: red; font-size: 1.5rem;" class="text-center">Subscribe to RCI News</h3>
+        <div class="mb-3">
+            <form action="https://formspree.io/f/xvolrpoy" method="POST" id="my-form">
+                {% csrf_token %}
+                <div class="row mb-3">
+
+                    <div class="col-sm-10">
+                        <input type="email" placeholder="Enter Email Address" name="email" class="form-control"
+                            id="inputEmail3">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="my-form-button">Subscribe</button>
+                <p id="my-form-status" class="text-center"></p>
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<section style="background-image: url('{% static 'image/back.png'%}');" id="row-4">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="float2">
+                    <p class="lead">Experience Quality</p>
+                    <h4>Specialised in
+                        Building Materials
+                    </h4>
+                </div>
+                <div id="float">
+                    <h3 class="text-center">Innovation</h3>
+                    <p>Embrace new ideas, technologies and innovations.Thoroughly understanding the markets we work, we
+                        develop our products to excel.</p>
+                </div>
+                <div id="float">
+                    <h3 class="text-center">Long experiences</h3>
+                    <p> Regchimar Chemical Ind Ltd was formed in <strong>2008 </strong> with the vision of producing and
+                        supply
+                        the best building
+                        material in Nigeria.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static 'image/slide 1.jpg'%}" class="d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'image/slide 2.jpg'%}" class="d-block w-80" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'image/slide 3.jpg'%}" class="d-block w-80" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container">
+        <div id="float1" class="pt-3">
+            <h2 data-text="Product...">Product...</h2>
+        </div>
+        <div id="hr"></div>
+        <div class="row p-4">
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/primer.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h4 class="text-center p-4" style="color: #a517ba;">ANDEX B51</h4>
+                    <a href="{%url 'shop:andex'%}" class="btn btn-primary">View</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3 " id="img-hover">
+                <img src="{% static 'image/sack.jpg'%}" class="img-fluid" alt="" width="550">
+                <div>
+                    <h4 class="text-center pt-4" style="color: #a517ba;">Super Fix</h4>
+                    <a href="{%url 'shop:tile'%}" class="btn btn-primary">View</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/harder.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h4 class="text-center pt-4" style="color: #a517ba;">Grout</h4>
+                    <a href="{%url 'shop:white'%}" class="btn btn-primary">View</a>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/leather.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h4 class="text-center pt-4" style="color: #a517ba;">Fine Build</h4>
+                    <a href="{%url 'shop:tile'%}" class="btn btn-primary">View</a>
+                </div>
+
+            </div>
+            <div class="p-4">
+                <a href="{% url 'shop:product'%}" style="text-decoration:none;">
+                    <p id="btn">View Product</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section style="background-image: url('{% static 'image/map.jpg'%}');" id="row-4">
+    <div class="container">
+        <h2 style="font-size: 1.7rem; text-align: center; color: red;" class="p-3"> <u>Company Certificate</u> </h2>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <img src="{% static 'image/doc.jpg'%}" class="img-fluid" alt="" width="300">
+            </div>
+
+        </div>
+</section>
+<script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "Thanks for your submission!";
+                form.reset()
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status.innerHTML = "Oops! There was a problem submitting your form"
+                    }
+                })
+            }
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+{% endblock content %}

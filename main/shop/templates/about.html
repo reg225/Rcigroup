@@ -1,0 +1,113 @@
+{% extends 'main.html'%} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'css/about.css'%}">
+<style>
+    header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 150px;
+    }
+</style>
+
+<section class="bg-light pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{%static 'image/ceo.jpg'%}" class="img-fluid" alt="" width="500pxpx"
+                    style="border-radius: 200px;">
+                <h4 class="text-center">Okorie Reginald .c. Marcel</h4>
+                <p class="text-center lead">CEO(RCI GROUP)</p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center" style="color: #a517ba;"> About RCI </h3>
+                <p>
+                    Rechimar Chemical Ind Ltd(RCI), was founded in 2001 by Okorie Reginald Chimazie. He is from Imo
+                    state
+                    Umuozo
+                    Nwagele LGA, Nigerial. RCI is generally acknowledge to be the best manufacturer supplier of any
+                    building material
+                    for any building project. As the company earned its deserved reputation by
+                    hard
+                    work,
+                    achieving high customer statisfaction, top-notch Quality and
+                    schedule targets, the size of the company and scope of work increased dramatically.
+                </p>
+                <p>At Rechimar Chemical Ind Ltd, our success is based on that of our customers and we always put our
+                    customer first. We
+                    are so confident in our products and our service that we adhere to the principle of all profit
+                    to
+                    our customer & all loss to us and would rather lose our profit than lose a customer. We support
+                    the
+                    growth of all our customers, no matter how big or small and work together for a brighter future
+                    for
+                    all.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-center" style="color: #a517ba;">Quality Standards</h2>
+                <p>RCI Group supply and produce high quality product for building. We try our best when it comes to
+                    maintaining our customers order because we believe the beauty and durability of a building comes
+                    from a good and quality product. </p>
+                <p>We produce the best product to meet all International quality standards of our Customers. We
+                    also deliver different Building material apath from our main product all over Africa. Our own
+                    product pass through strict quality control processes, In other to follow International standards
+                    and cerification board. </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section style="background-image: url('{% static 'image/blue_picture_background_CP_PROD.jpg'%}');" id="fix">
+    <div class="container" style="color: #fff;">
+        <h2 class="text-center">OUR MOTTO</h2>
+        <p class="text-center">Our motto is 'we only succeed if our customers succeed'. At RCI, our customers success is
+            vital to us and
+            we look after and support every customer's growth, no matter how big or small.</p>
+    </div>
+</section>
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <h3 style="color: #a517ba;">What we produce.</h3>
+                <p>Most of our product comes with the Logo RCI(Regchimar Chemical Ind Ltd). <br> What we produce are:
+                </p>
+                <ul>
+                    <li><strong>Tile Gum</strong> </li>
+                    <li><strong>Colour Hardner</strong></li>
+                    <li><strong>Realease Agent</strong></li>
+                    <li><strong>Tile polish</strong></li>
+                    <li><strong>Primer(ANDEX B51)</strong></li>
+                </ul>
+                <a href="{% url 'shop:product' %}">
+                    <p class="btn">View Product</p>
+                </a>
+            </div>
+            <div class="col-md-6 pt-4">
+                <h3 style="color: #a517ba;">Other Product</h3>
+                <p>We are also dealer of some other products listed below.</p>
+                <ul>
+                    <li> <strong>JK white cement</strong> </li>
+                    <li> <strong>Joy white cement</strong> </li>
+                    <li> <strong> Tiles</strong></li>
+                    <li> <strong> Pigment</strong></li>
+                    <li> <strong>Stam polish</strong> </li>
+                </ul>
+                <a href="{% url 'shop:product1' %}">
+                    <p class="btn">View Product</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% endblock content %}

@@ -1,0 +1,104 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<style>
+    header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #h2 {
+        font-size: 2rem;
+        color: red;
+        -webkit-text-stroke: 1px #000;
+
+    }
+</style>
+<header style="background-image: url('{% static 'image/slider.jpg'%}'); padding-bottom: 100px; ">
+    <div class="container-fluid">
+        <div style="color: orangered;">
+            <h1 style="font-size: 1.8rem;" class="text-center pt-4">Regchimar Chemical Ind LTD(RCI)</h1>
+        </div>
+
+        <h1 style="color: #fff; font-size: 1.2rem;">We Produce and Supply the Best Quality Product for your Buildings
+        </h1>
+    </div>
+</header>
+<section class="bg-light">
+    <div class="container">
+        <h2 class="text-center pb-4" id="h2">RCI PRODUCT</h2>
+        <div class="row p-4">
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/primer.jpg'%}" class="card-img-top" alt="..." width="600">
+                <div>
+                    <h5 class="card-title text-center p-1" style="color: #a517ba;">ANDEX B51</h5>
+                    <a href="{%url 'shop:andex'%}" class="btn btn-primary">View</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3 " id="img-hover">
+                <img src="{% static 'image/sack.jpg'%}" class="img-fluid" alt="" width="550">
+                <div>
+                    <h5 class="text-center" style="color: #a517ba;">Top Choice(Adhensive)TileGum</h5>
+                    <a href="{%url 'shop:tile'%}" class="btn btn-primary">view</a>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/harder.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h5 class="text-center p-1" style="color: #a517ba;">Grout</h5>
+                    <a href="{%url 'shop:white'%}" class="btn btn-primary">View</a>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/polish.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h5 class="text-center p-1" style="color: #a517ba;">Tile Polish</h5>
+                    <a href="{%url 'shop:polish'%}" class="btn btn-primary">View</a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row p-4">
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/leather.jpg'%}" class="card-img-top" alt="..." width="600">
+                <div>
+                    <h5 class="card-title text-center p-1" style="color: #a517ba;">Top Choice(Adhensive)TileGum</h5>
+                    <a href="{%url 'shop:tile'%}" class="btn btn-primary">View</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3 " id="img-hover">
+                <img src="{% static 'image/b12.jpg'%}" class="img-fluid" alt="" width="550">
+                <div>
+                    <h5 class="text-center" style="color: #a517ba;">B12</h5>
+                    <a href="{%url 'shop:b12'%}" class="btn btn-primary">view</a>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/top1.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h5 class="text-center p-1" style="color: #a517ba;">White Cement</h5>
+                    <a href="{%url 'shop:white'%}" class="btn btn-primary">View</a>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-4 mb-3" id="img-hover">
+                <img src="{% static 'image/tilefix.jpg'%}" class="img-fluid" alt="" width="600">
+                <div>
+                    <h5 class="text-center p-1" style="color: #a517ba;">Top Choice(Adhensive)TileGum</h5>
+                    <a href="{%url 'shop:tile'%}" class="btn btn-primary">View</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+{% endblock content %}

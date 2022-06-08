@@ -1,0 +1,217 @@
+#banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 200px;
+}
+
+.banner-h {
+    color: #ffff;
+}
+
+
+.title-b {
+    color: white;
+    margin-left: 30px;
+
+}
+
+
+.title-b p {
+    font-size: 1rem;
+}
+
+.home-4 {
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+#home-btn {
+    position: relative;
+    bottom: -60px;
+
+}
+
+#nav-ul li a:hover {
+    background-color: slateblue;
+    margin: 1px;
+}
+
+#btn {
+    border: solid 1px black;
+    text-align: center;
+    margin: auto;
+    width: 140px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    color: #ffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-image: linear-gradient(to right, red, #5f1782);
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .static-txt {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.wrapper .dynamic-txts {
+    margin-left: -15px;
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+
+}
+
+.dynamic-txts li {
+    list-style: none;
+    color: orangered;
+    font-size: 1.2rem;
+    top: 0;
+    position: relative;
+    animation: slide 11s steps(3) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -100px;
+    }
+}
+
+.wrapper p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.dynamic-txts li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+    border-left: 2px solid #a517ba;
+    animation: typing 2s steps(7) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.home-2 {
+    background-color: darkgrey;
+}
+
+#card p {
+    font-weight: bold;
+}
+
+.p-img {
+    width: 200px;
+    height: 50px;
+}
+
+.p-img2 {
+    width: 100px;
+    height: 50px;
+}
+
+.p-img3 {
+    width: 200px;
+    height: 200px;
+}
+
+#row-4 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#row-3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#float h3 {
+    font-size: 1.5rem;
+    color: #a517ba;
+}
+
+#float2 h4 {
+    font-size: 2rem;
+    color: red;
+}
+
+#float1 h2 {
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    -webkit-text-stroke: 0.1vw red;
+    text-transform: uppercase;
+
+
+
+}
+
+#hr {
+    border-bottom: 3px blue solid;
+    margin: auto;
+    width: 80px;
+}
+
+#float1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+
+#float1 h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 50;
+    width: 0%;
+    height: 100%;
+    color: #a517ba;
+    -webkit-text-stroke: 0vw red;
+    border-right: 2px solid red;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+
+}
+
+@keyframes animate {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
